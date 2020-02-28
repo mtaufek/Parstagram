@@ -12,8 +12,7 @@ import Parse
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Initialize Parse
@@ -24,6 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://enigmatic-basin-78568.herokuapp.com/parse"
             })
         )
+        if PFUser.current() != nil {
+            print("current user available")
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            window?.rootViewController = feedNavigationController
+            window?.makeKeyAndVisible()
+        }else{
+            print("no current user")
+        }
 
         return true
     }
