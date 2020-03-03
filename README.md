@@ -24,7 +24,8 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/dHWcMnmWrW.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-# Parstagram - Part II
+
+# Instagram - Part II
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!
 
