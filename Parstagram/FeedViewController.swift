@@ -55,6 +55,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             becomeFirstResponder()
             commentBar.inputTextView.becomeFirstResponder()
             
+            selectedPost = post
             
         }
     }
@@ -114,7 +115,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         // Create the comment
         let comments = PFObject(className: "Comments")
-        comments["text"] = "randommm"
+        comments["text"] = text
         comments["author"] = PFUser.current()!
         comments["post"] = selectedPost
 
