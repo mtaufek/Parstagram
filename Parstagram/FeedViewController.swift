@@ -87,6 +87,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let user = comment["author"] as! PFUser
             cell.nameLabel.text = user.username
+            print("USERNAME:\(user.username)")
             return cell
             
         }else{
