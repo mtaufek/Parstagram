@@ -49,4 +49,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://im.ezgif.com/tmp/ezgif-1-20ba895f6dba.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://im.ezgif.com/tmp/ezgif-1-20ba895f6dba.gif' title='Video Walkthrough' width='200' height='400' alt='Video Walkthrough' />
